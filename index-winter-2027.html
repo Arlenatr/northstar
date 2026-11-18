@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthStar Diving Kemer | 25 Yıllık Tecrübe & Özel Dalış Teknesi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#041527',
+                            900: '#071e36',
+                            800: '#0c2c4d',
+                            700: '#133e6b',
+                        },
+                        aqua: {
+                            400: '#38bdf8',
+                            500: '#00b4d8',
+                            600: '#0096c7',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #041527; }
+        ::-webkit-scrollbar-thumb { background: #00b4d8; border-radius: 4px; }
+        
+        .glass-panel {
+            background: rgba(12, 44, 77, 0.55);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(0, 180, 216, 0.2);
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(4, 21, 39, 0.65) 0%, rgba(4, 21, 39, 0.80) 65%, #041527 100%);
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            70% { transform: scale(1.25); opacity: 0; }
+            100% { transform: scale(1.25); opacity: 0; }
+        }
+        .wa-pulse::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            background-color: #22c55e;
+            z-index: -1;
+            animation: pulse-ring 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-100 antialiased selection:bg-aqua-500 selection:text-white overflow-x-hidden">
+
+    <!-- KIŞ SEZONU / 2027 ÖN KAYIT DUYURU BANDI -->
+    <div class="bg-gradient-to-r from-amber-600/95 via-gold-500/95 to-amber-600/95 text-navy-950 text-xs sm:text-sm py-2.5 px-4 font-bold shadow-md relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-3 text-center">
+            <span class="inline-flex items-center gap-1.5 bg-navy-950 text-gold-400 px-2.5 py-0.5 rounded-full text-[11px] uppercase tracking-wider">
+                <i class="fa-regular fa-snowflake"></i> <span data-i18n="winter_pill">Kış Sezonu Molası</span>
+            </span>
+            <span data-i18n="winter_banner_text">2026 Sezonunu Tamamladık! Teknemiz bakımda • 2027 Sezonunda Sizleri de Bekliyoruz (Erken Bilgi & Ön Kayıt Açık)</span>
+        </div>
+    </div>
+
+    <!-- ÜST BİLGİ BARI -->
+    <div class="bg-navy-900 border-b border-aqua-500/20 text-xs py-2.5 px-4 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-slate-300">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-aqua-400"></i> 
+                    <span data-i18n="top_location">Kemer Marina, G Marina (Vincin Yanı) • Tekne: NORTHSTAR</span>
+                </span>
+                <span class="flex items-center gap-2 text-gold-400 font-semibold">
+                    <i class="fa-solid fa-award"></i> 
+                    <span data-i18n="top_heritage">25 Yıllık Tecrübe • Maksimum 30 Kişilik VIP Kapasite</span>
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+905412851607" class="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition">
+                    <i class="fa-solid fa-phone text-xs"></i> 0541 285 16 07
+                </a>
+                <span class="text-slate-600">|</span>
+                <a href="https://www.instagram.com/northstar.diving/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-pink-400 hover:text-pink-300 font-semibold transition">
+                    <i class="fa-brands fa-instagram text-sm"></i> @northstar.diving
+                </a>
+                <span class="text-slate-600">|</span>
+                <a href="#yorumlar" class="flex items-center gap-1.5 text-gold-400 font-semibold hover:underline">
+                    <i class="fa-brands fa-google"></i> 4.9 / 5 Google
+                </a>
+                <span class="text-slate-600">|</span>
+                <!-- Canlı Dil Seçici -->
+                <div class="flex items-center gap-1.5 bg-navy-950 px-2.5 py-1 rounded-lg border border-slate-800">
+                    <button onclick="setLanguage('tr')" id="lang-tr" class="px-1.5 py-0.5 rounded text-xs font-bold bg-aqua-500 text-navy-950 transition">TR</button>
+                    <button onclick="setLanguage('en')" id="lang-en" class="px-1.5 py-0.5 rounded text-xs font-medium text-slate-400 hover:text-white transition">EN</button>
+                    <button onclick="setLanguage('ru')" id="lang-ru" class="px-1.5 py-0.5 rounded text-xs font-medium text-slate-400 hover:text-white transition">RU</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANA NAVİGASYON (SEKMELER) -->
+    <header class="sticky top-0 z-40 bg-navy-950/90 backdrop-blur-md border-b border-aqua-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Marka Logosu -->
+                <a href="#anasayfa" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-aqua-400 to-blue-700 flex items-center justify-center shadow-lg shadow-aqua-500/25 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-compass text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-xl tracking-tight text-white block leading-none">
+                            NORTHSTAR <span class="text-aqua-400">DIVING</span>
+                        </span>
+                        <span class="text-[11px] uppercase tracking-widest text-gold-400 font-semibold">Est. 2001 • Kemer Marina</span>
+                    </div>
+                </a>
+
+                <!-- Masaüstü Menü Sekmeleri -->
+                <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-200">
+                    <a href="#anasayfa" data-i18n="nav_home" class="hover:text-aqua-400 transition py-2">Ana Sayfa</a>
+                    <a href="#paketler" class="hover:text-aqua-400 transition py-2 flex items-center gap-1.5">
+                        <span data-i18n="nav_packages">Dalış Paketleri</span>
+                        <span class="bg-gold-500/20 text-gold-400 text-[10px] px-1.5 py-0.5 rounded-full font-bold">2027</span>
+                    </a>
+                    <a href="#ozel-noktalar" data-i18n="nav_spots" class="hover:text-aqua-400 transition py-2">Paris II & Üç Adalar</a>
+                    <a href="#hakkimizda" data-i18n="nav_about" class="hover:text-aqua-400 transition py-2">Teknemiz & Hakkımızda</a>
+                    <a href="#galeri" data-i18n="nav_gallery" class="hover:text-aqua-400 transition py-2">Galeri</a>
+                    <a href="#konum" data-i18n="nav_contact" class="hover:text-aqua-400 transition py-2">G Marina & İletişim</a>
+                </nav>
+
+                <!-- Sağ Butonlar -->
+                <div class="flex items-center gap-2.5">
+                    <a href="https://www.instagram.com/northstar.diving/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-xl bg-navy-800 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 text-slate-200 hover:text-white flex items-center justify-center transition">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <button onclick="openWhatsAppModal('general')" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/25 flex items-center gap-2 transition transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span class="hidden sm:inline" data-i18n="btn_wa_header">WhatsApp Bilgi</span>
+                    </button>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl bg-navy-800 text-slate-200 hover:text-white">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobil Menü -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 border-b border-aqua-500/20 px-4 pt-2 pb-6 space-y-2">
+            <a href="#anasayfa" data-i18n="nav_home" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Ana Sayfa</a>
+            <a href="#paketler" data-i18n="nav_packages" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Dalış Paketleri</a>
+            <a href="#ozel-noktalar" data-i18n="nav_spots" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Paris II & Üç Adalar</a>
+            <a href="#hakkimizda" data-i18n="nav_about" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Teknemiz & Hakkımızda</a>
+            <a href="#galeri" data-i18n="nav_gallery" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Galeri</a>
+            <a href="#konum" data-i18n="nav_contact" class="block px-3 py-2.5 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">G Marina & İletişim</a>
+            
+            <!-- Mobil Dil Seçimi -->
+            <div class="pt-3 px-3 flex items-center justify-between border-t border-slate-800">
+                <span class="text-xs text-slate-400">Dil / Language / Язык:</span>
+                <div class="flex gap-2">
+                    <button onclick="setLanguage('tr')" id="mob-lang-tr" class="px-2.5 py-1 rounded bg-aqua-500 text-navy-950 text-xs font-bold">TR</button>
+                    <button onclick="setLanguage('en')" id="mob-lang-en" class="px-2.5 py-1 rounded bg-navy-800 text-slate-300 text-xs font-bold">EN</button>
+                    <button onclick="setLanguage('ru')" id="mob-lang-ru" class="px-2.5 py-1 rounded bg-navy-800 text-slate-300 text-xs font-bold">RU</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HERO (ANA SAYFA) -->
+    <section id="anasayfa" class="relative min-h-[88vh] flex items-center justify-center overflow-hidden">
+        <img src="image_500ea5.jpg" 
+             onerror="this.src='https://placehold.co/1920x1080/041527/00b4d8?text=NORTHSTAR+Diving+Kemer'"
+             alt="NorthStar Diving Kemer Teknesi" 
+             class="absolute inset-0 w-full h-full object-cover object-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <!-- 25 Yıllık Tecrübe & Google Güven Rozeti -->
+            <div class="inline-flex flex-wrap items-center justify-center gap-2.5 px-4 py-2 rounded-full bg-navy-900/90 border border-gold-400/40 text-xs sm:text-sm mb-8 shadow-xl">
+                <span class="text-gold-400 font-extrabold flex items-center gap-1.5">
+                    <i class="fa-solid fa-medal"></i> <span data-i18n="hero_badge_years">Kış Molası • 2027 Sezonunda Görüşmek Üzere</span>
+                </span>
+                <span class="text-slate-600">•</span>
+                <a href="#yorumlar" class="flex items-center gap-1.5 text-white font-semibold hover:text-aqua-400 transition">
+                    <span class="flex text-gold-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <span data-i18n="hero_google_rating">4.9 Google Puanı</span>
+                </a>
+            </div>
+
+            <h1 data-i18n="hero_title" class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-tight max-w-4xl mx-auto leading-[1.12] mb-6">
+                2027 Sezonunda <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-300 to-aqua-400">Derinliklerde Buluşalım</span>
+            </h1>
+
+            <p data-i18n="hero_subtitle" class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Kış dönemi boyunca teknemiz ve ekipmanlarımız yeni sezon için bakıma alındı. <strong class="text-white">2027 baharından itibaren</strong> 30 kişilik özel NORTHSTAR teknemizle Kemer G Marina’dan yeniden denize açılıyoruz!
+            </p>
+
+            <!-- Aksiyon Butonları -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#paketler" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-aqua-500 to-blue-600 hover:from-aqua-400 hover:to-blue-500 text-white font-bold text-base shadow-xl shadow-aqua-500/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-tags"></i> <span data-i18n="hero_btn_packages">2027 Paketlerini İncele</span>
+                </a>
+                <button onclick="openWhatsAppModal('quick')" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base shadow-xl shadow-emerald-500/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> <span data-i18n="hero_btn_wa">2027 Sezonu İçin Bilgi Al</span>
+                </button>
+            </div>
+
+            <!-- 4 Temel Avantaj Şeridi -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mt-16 pt-8 border-t border-white/10 text-left">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-aqua-500/20 text-aqua-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-ship text-lg"></i></div>
+                    <div>
+                        <div class="font-bold text-white text-sm" data-i18n="feat_boat_title">30 Kişilik VIP Tekne</div>
+                        <div class="text-xs text-slate-400" data-i18n="feat_boat_sub">NORTHSTAR Özel Teknemiz</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-van-shuttle text-lg"></i></div>
+                    <div>
+                        <div class="font-bold text-white text-sm" data-i18n="feat_transfer_title">Ücretsiz Transfer</div>
+                        <div class="text-xs text-slate-400" data-i18n="feat_transfer_sub">G Marina Kapıda Karşılama</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-utensils text-lg"></i></div>
+                    <div>
+                        <div class="font-bold text-white text-sm" data-i18n="feat_lunch_title">Öğle Yemeği Dahil</div>
+                        <div class="text-xs text-slate-400" data-i18n="feat_lunch_sub">Tam Ekipman + Rehberlik</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-camera text-lg"></i></div>
+                    <div>
+                        <div class="font-bold text-white text-sm" data-i18n="feat_photo_title">Su Altı Foto & Video</div>
+                        <div class="text-xs text-slate-400" data-i18n="feat_photo_sub">İsteğe Bağlı Profesyonel Çekim</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. DALIŞ PAKETLERİ & FİYATLAR -->
+    <section id="paketler" class="py-24 bg-navy-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-aqua-400 font-bold tracking-wider uppercase text-xs bg-aqua-500/10 px-3.5 py-1.5 rounded-full border border-aqua-500/20" data-i18n="pkg_tag">
+                    Şu An Kış Molasındayız • 2027 Sezonu Hazırlıkları
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white mt-4 mb-4" data-i18n="pkg_heading">
+                    2027 Sezonu Dalış Paketlerimiz
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg" data-i18n="pkg_desc">
+                    Kış sezonunda turlarımıza ara verdik. Aşağıdaki paket ve güncel tarifelerimizi inceleyebilir, <strong>2027 sezonu açılış tarihi ve erken rezervasyon</strong> için WhatsApp hattımızdan bize ulaşabilirsiniz.
+                </p>
+            </div>
+
+            <!-- 4'lü Paket Grid Yapısı -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
+                
+                <!-- PAKET 1: TEK KİŞİLİK KEŞİF DALIŞI -->
+                <div class="glass-panel rounded-3xl p-7 flex flex-col justify-between hover:border-aqua-400/50 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span data-i18n="p1_badge" class="px-3 py-1 rounded-full bg-aqua-500/20 text-aqua-300 text-xs font-bold">Keşif Dalışı</span>
+                            <i class="fa-solid fa-mask-snorkel text-xl text-aqua-400"></i>
+                        </div>
+                        <h3 data-i18n="p1_title" class="font-display font-bold text-xl text-white mb-2">Tek Kişilik Dalış Turu</h3>
+                        <p data-i18n="p1_desc" class="text-slate-400 text-xs leading-relaxed mb-5">İlk kez dalacaklar veya yüzme bilmeyenler için birebir eğitmen eşliğinde güvenli keşif.</p>
+                        
+                        <div class="mb-5 pb-5 border-b border-slate-700/60">
+                            <div class="flex items-baseline gap-1.5">
+                                <span data-i18n="price_single" class="font-display font-extrabold text-3xl text-white">3.000 ₺</span>
+                                <span data-i18n="per_person" class="text-slate-400 text-xs">/ Kişi</span>
+                            </div>
+                            <span class="text-[11px] text-emerald-400 mt-1 block"><i class="fa-solid fa-check"></i> <span data-i18n="inc_short">Transfer + Yemek + Ekipman Dahil</span></span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-aqua-400"></i> <span data-i18n="p1_f1">Kemer koylarında <strong>2 Adet Dalış</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-aqua-400"></i> <span data-i18n="p1_f2">Ücretsiz otel gidiş-dönüş transferi</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-aqua-400"></i> <span data-i18n="p1_f3">Tüm dalış ekipmanları & tüp</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-aqua-400"></i> <span data-i18n="p1_f4">Teknede öğle yemeği <em>(İçecek hariç)</em></span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-camera text-purple-400"></i> <span data-i18n="p1_f5">Su altı foto & video <em>(İsteğe bağlı ekstra)</em></span></li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppModal('single')" class="w-full py-3.5 px-4 rounded-xl bg-navy-800 hover:bg-emerald-500 text-white font-bold text-xs border border-aqua-500/30 hover:border-emerald-400 transition flex items-center justify-center gap-2 group">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-400 group-hover:text-white"></i>
+                        <span data-i18n="btn_book_wa">2027 İçin Ön Bilgi Al</span>
+                    </button>
+                </div>
+
+                <!-- PAKET 2: İKİLİ AVANTAJ PAKETİ -->
+                <div class="relative rounded-3xl p-7 flex flex-col justify-between bg-gradient-to-b from-navy-800 to-navy-900 border-2 border-gold-400 shadow-2xl shadow-gold-500/15 xl:-translate-y-2">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-gold-400 to-amber-500 text-navy-950 font-extrabold text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-full shadow-lg whitespace-nowrap">
+                        <i class="fa-solid fa-fire"></i> <span data-i18n="badge_discount">500 ₺ İndirimli • En Popüler</span>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-4 mt-1">
+                            <span data-i18n="p2_badge" class="px-3 py-1 rounded-full bg-gold-400/20 text-gold-300 text-xs font-bold">2 Kişilik Kampanya</span>
+                            <i class="fa-solid fa-users text-xl text-gold-400"></i>
+                        </div>
+                        <h3 data-i18n="p2_title" class="font-display font-bold text-xl text-white mb-2">İkili Avantaj Paketi</h3>
+                        <p data-i18n="p2_desc" class="text-slate-300 text-xs leading-relaxed mb-5">Çiftler ve arkadaşlar için özel fiyat! Birlikte dalın, toplamda 500 ₺ indirim kazanın.</p>
+                        
+                        <div class="mb-5 pb-5 border-b border-slate-700/80">
+                            <div class="flex items-center gap-2 mb-0.5">
+                                <span data-i18n="price_double_old" class="text-slate-400 line-through text-sm font-semibold">6.000 ₺</span>
+                                <span data-i18n="save_tag" class="bg-emerald-500/20 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded">500 ₺ Kazanç</span>
+                            </div>
+                            <div class="flex items-baseline gap-1.5">
+                                <span data-i18n="price_double" class="font-display font-extrabold text-3xl text-gold-400">5.500 ₺</span>
+                                <span data-i18n="per_two" class="text-slate-300 text-xs">/ 2 Kişi</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-200 mb-6">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-400"></i> <span data-i18n="p2_f1">2 Kişi için <strong>2'şer Adet Dalış</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-400"></i> <span data-i18n="p2_f2">Su altında yan yana dalış imkanı</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-400"></i> <span data-i18n="p2_f3">2 Kişi için otel transferi & ekipman</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-400"></i> <span data-i18n="p2_f4">2 Kişi öğle yemeği <em>(İçecek hariç)</em></span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-camera text-purple-300"></i> <span data-i18n="p2_f5">Çiftlere özel su altı çekim <em>(Opsiyonel)</em></span></li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppModal('double')" class="w-full py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-xs shadow-lg shadow-emerald-500/30 transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span data-i18n="btn_book_discount">2027 Kampanya Bilgisi Al</span>
+                    </button>
+                </div>
+
+                <!-- PAKET 3: PARİS II BATIĞI ÖZEL DALIŞI -->
+                <div class="glass-panel rounded-3xl p-7 flex flex-col justify-between hover:border-cyan-400/50 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[11px] font-bold">
+                                <i class="fa-solid fa-id-card mr-1"></i> <span data-i18n="p3_badge">Bröve Şartlı</span>
+                            </span>
+                            <i class="fa-solid fa-ship text-xl text-cyan-400"></i>
+                        </div>
+                        <h3 data-i18n="p3_title" class="font-display font-bold text-xl text-white mb-2">Paris II Batığı Dalışı</h3>
+                        <p data-i18n="p3_desc" class="text-slate-400 text-xs leading-relaxed mb-5">Dünyanın en iyi 100 batığından biri olan 1917 yapımı tarihi savaş gemisine özel dalış.</p>
+                        
+                        <div class="mb-5 pb-5 border-b border-slate-700/60">
+                            <div class="flex items-baseline gap-1.5">
+                                <span data-i18n="price_paris" class="font-display font-extrabold text-3xl text-white">4.000 ₺</span>
+                                <span data-i18n="per_certified" class="text-slate-400 text-xs">/ Sertifikalı</span>
+                            </div>
+                            <span class="text-[11px] text-cyan-400 mt-1 block"><i class="fa-solid fa-arrows-down-to-line"></i> <span data-i18n="p3_depth">Derinlik: 24m - 33m</span></span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-triangle-exclamation text-gold-400 mt-0.5"></i> 
+                                <span data-i18n="p3_f1"><strong>Belge Şartı:</strong> CMAS 2* / PADI AOWD veya dengi derin dalış brövesi</span>
+                            </li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400"></i> <span data-i18n="p3_f2">1 Batık Dalışı + 1 Resif Dalışı</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400"></i> <span data-i18n="p3_f3">Batık uzmanı lider eşliğinde</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-cyan-400"></i> <span data-i18n="p3_f4">Transfer + Ekipman + Öğle Yemeği</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-camera text-purple-400"></i> <span data-i18n="p3_f5">Batık hatıra çekimi <em>(Opsiyonel)</em></span></li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppModal('paris')" class="w-full py-3.5 px-4 rounded-xl bg-navy-800 hover:bg-emerald-500 text-white font-bold text-xs border border-cyan-500/30 hover:border-emerald-400 transition flex items-center justify-center gap-2 group">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-400 group-hover:text-white"></i>
+                        <span data-i18n="p3_btn">2027 Batık Dalışı Bilgi Al</span>
+                    </button>
+                </div>
+
+                <!-- PAKET 4: ÜÇ ADALAR ÖZEL DALIŞ TURU -->
+                <div class="glass-panel rounded-3xl p-7 flex flex-col justify-between hover:border-teal-400/50 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 border border-teal-500/30 text-[11px] font-bold">
+                                <i class="fa-solid fa-gem mr-1"></i> <span data-i18n="p4_badge">Özel Rota</span>
+                            </span>
+                            <i class="fa-solid fa-water text-xl text-teal-400"></i>
+                        </div>
+                        <h3 data-i18n="p4_title" class="font-display font-bold text-xl text-white mb-2">Üç Adalar Dalış Turu</h3>
+                        <p data-i18n="p4_desc" class="text-slate-400 text-xs leading-relaxed mb-5">Tekirova açıklarında su altı mağaraları, dik duvarlar ve eşsiz Akdeniz canlılığı.</p>
+                        
+                        <div class="mb-5 pb-5 border-b border-slate-700/60">
+                            <div class="flex items-baseline gap-1">
+                                <span data-i18n="price_islands" class="font-display font-extrabold text-2xl sm:text-3xl text-white">4.000 - 4.250 ₺</span>
+                            </div>
+                            <span class="text-[11px] text-teal-400 mt-1 block"><i class="fa-solid fa-compass"></i> <span data-i18n="p4_sub">Mesafe ve Sezona Göre Özel Tur</span></span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-teal-400"></i> <span data-i18n="p4_f1">Üç Adalar bölgesinde <strong>2 Özel Dalış</strong></span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-teal-400"></i> <span data-i18n="p4_f2">Mağara, kanyon ve vatoz/kaplumbağa rotası</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-teal-400"></i> <span data-i18n="p4_f3">30 metreyi bulan cam gibi görüş</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-teal-400"></i> <span data-i18n="p4_f4">Transfer + Ekipman + Öğle Yemeği</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-camera text-purple-400"></i> <span data-i18n="p4_f5">HD Foto & Video <em>(Opsiyonel)</em></span></li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppModal('islands')" class="w-full py-3.5 px-4 rounded-xl bg-navy-800 hover:bg-emerald-500 text-white font-bold text-xs border border-teal-500/30 hover:border-emerald-400 transition flex items-center justify-center gap-2 group">
+                        <i class="fa-brands fa-whatsapp text-base text-emerald-400 group-hover:text-white"></i>
+                        <span data-i18n="p4_btn">2027 Sezonu İçin Sor</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Stratejik Bilgi Notu: Dahil Olanlar & Opsiyonel Çekim -->
+            <div class="mt-10 glass-panel rounded-2xl p-5 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-4 border-aqua-500/25">
+                <div class="flex items-start sm:items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-300 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <div>
+                        <h4 data-i18n="photo_note_title" class="font-bold text-white text-sm sm:text-base">Anılarınızı Ölümsüzleştirin: Profesyonel Su Altı Fotoğraf & Video Çekimi</h4>
+                        <p data-i18n="photo_note_desc" class="text-xs sm:text-sm text-slate-300 mt-0.5">
+                            Dalış boyunca su altı kameramanlarımız tarafından çekilen yüksek çözünürlüklü fotoğraf ve videolarınızı tur sonunda telefonunuza aktarabilirsiniz. <em>(İsteğe bağlı ekstra hizmettir; teknede alınan içecekler de ekstra olarak ücretlendirilir.)</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ÖZEL DALIŞ NOKTALARI: PARİS II BATIĞI & ÜÇ ADALAR -->
+    <section id="ozel-noktalar" class="py-24 bg-navy-900/70 border-y border-aqua-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span data-i18n="spots_tag" class="text-cyan-400 font-bold tracking-wider uppercase text-xs">Efsanevi Akdeniz Rotaları</span>
+                <h2 data-i18n="spots_heading" class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2 mb-4">Kemer’in İki Büyük Hazinesi</h2>
+                <p data-i18n="spots_desc" class="text-slate-400 text-sm sm:text-base">
+                    Kemer Marina’dan kalkan NORTHSTAR teknemizle hem dünya dalış literatürüne girmiş tarihi batıklara hem de el değmemiş ada resiflerine ulaşıyoruz.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- KART 1: PARİS II BATIĞI -->
+                <div class="glass-panel rounded-3xl overflow-hidden border border-cyan-500/30 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 sm:h-72 overflow-hidden">
+                            <img src="Koridoru Aydınlatan Batık Dalgıcı.png" 
+                                 onerror="this.src='https://placehold.co/800x500/0c2c4d/00b4d8?text=Paris+II+Batigi'"
+                                 alt="Paris II Batığı İç Geçiş" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/30 to-transparent"></div>
+                            <div class="absolute top-4 left-4 bg-rose-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow">
+                                <i class="fa-solid fa-id-badge mr-1"></i> <span data-i18n="spot1_badge">Sertifikalı Dalgıçlara Özel</span>
+                            </div>
+                            <div class="absolute bottom-4 left-5 right-5 flex flex-wrap gap-2">
+                                <span data-i18n="spot1_tag1" class="bg-navy-950/90 text-cyan-300 text-xs font-bold px-3 py-1 rounded-md border border-cyan-500/30">Derinlik: 24m - 33m</span>
+                                <span data-i18n="spot1_tag2" class="bg-navy-950/90 text-gold-400 text-xs font-bold px-3 py-1 rounded-md border border-gold-500/30">1917 Savaş Batığı</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+                            <h3 data-i18n="spot1_title" class="font-display font-extrabold text-2xl text-white mb-3">Paris II Batığı (4.000 ₺)</h3>
+                            <p data-i18n="spot1_desc" class="text-slate-300 text-sm leading-relaxed mb-5">
+                                1. Dünya Savaşı sırasında 1917 yılında batırılan 50 metrelik Fransız savaş gemisi <strong>Paris II</strong>, üzerindeki uçaksavar topları ve torpido kovanlarıyla su altında adeta bir açık hava müzesidir.
+                            </p>
+                            <div class="bg-navy-950/80 border border-gold-500/30 rounded-xl p-4 mb-6">
+                                <div class="text-xs font-bold text-gold-400 mb-1"><i class="fa-solid fa-shield-halved mr-1"></i> <span data-i18n="spot1_cert_title">Gerekli Dalış Sertifikası:</span></div>
+                                <p data-i18n="spot1_cert_desc" class="text-xs text-slate-300">Derinlik sebebiyle en az <strong>CMAS 2 Yıldız</strong> veya <strong>PADI Advanced Open Water (AOWD)</strong> belgesi zorunludur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+                        <button onclick="openWhatsAppModal('paris')" class="w-full py-3.5 px-5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-navy-950 font-extrabold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> <span data-i18n="spot1_btn">Sertifikanı İlet & Yer Ayırt</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KART 2: ÜÇ ADALAR (THREE ISLANDS) -->
+                <div class="glass-panel rounded-3xl overflow-hidden border border-teal-500/30 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 sm:h-72 overflow-hidden">
+                            <img src="Turkuaz Sularda Renkli Balık Sürüsü.png" 
+                                 onerror="this.src='https://placehold.co/800x500/0c2c4d/2dd4bf?text=Uc+Adalar+Dalis+Turu'"
+                                 alt="Üç Adalar Turkuaz Sular ve Balık Sürüsü" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/30 to-transparent"></div>
+                            <div class="absolute top-4 left-4 bg-teal-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow">
+                                <i class="fa-solid fa-compass mr-1"></i> <span data-i18n="spot2_badge">Akdeniz'in Akvaryumu</span>
+                            </div>
+                            <div class="absolute bottom-4 left-5 right-5 flex flex-wrap gap-2">
+                                <span data-i18n="spot2_tag1" class="bg-navy-950/90 text-teal-300 text-xs font-bold px-3 py-1 rounded-md border border-teal-500/30">Görüş: 30+ Metre</span>
+                                <span data-i18n="spot2_tag2" class="bg-navy-950/90 text-aqua-300 text-xs font-bold px-3 py-1 rounded-md border border-aqua-500/30">Mağara & Resifler</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+                            <h3 data-i18n="spot2_title" class="font-display font-extrabold text-2xl text-white mb-3">Üç Adalar Dalış Turu (4.000 - 4.250 ₺)</h3>
+                            <p data-i18n="spot2_desc" class="text-slate-300 text-sm leading-relaxed mb-5">
+                                Tekirova açıklarında yer alan <strong>Üç Adalar</strong>; su altı mağaraları, dik duvarları, baraküda sürüleri, vatozlar ve Caretta Caretta deniz kaplumbağaları ile Kemer’in en zengin dalış bölgesidir.
+                            </p>
+                            <div class="bg-navy-950/80 border border-teal-500/30 rounded-xl p-4 mb-6">
+                                <div class="text-xs font-bold text-teal-400 mb-1"><i class="fa-solid fa-circle-info mr-1"></i> <span data-i18n="spot2_detail_title">Tur Detayı:</span></div>
+                                <p data-i18n="spot2_detail_desc" class="text-xs text-slate-300">Uzun mesafe özel rotamızdır; transfer, 2 dalış, ekipman ve öğle yemeği dahildir. Sertifikalı ve tecrübeli dalgıçlar için uygundur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+                        <button onclick="openWhatsAppModal('islands')" class="w-full py-3.5 px-5 rounded-xl bg-teal-500 hover:bg-teal-400 text-navy-950 font-extrabold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> <span data-i18n="spot2_btn">Üç Adalar Tur Günü Sor</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. HAKKIMIZDA & NORTHSTAR TEKNEMİZ -->
+    <section id="hakkimizda" class="py-24 bg-navy-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold mb-3">
+                        <i class="fa-solid fa-award"></i> <span data-i18n="about_tag">25 Senelik Köklü Tecrübe</span>
+                    </div>
+                    <h2 data-i18n="about_heading" class="font-display font-extrabold text-3xl sm:text-4xl text-white mb-5">
+                        Neden <span class="text-aqua-400">NORTHSTAR</span> Teknesini Tercih Etmelisiniz?
+                    </h2>
+                    <p data-i18n="about_desc" class="text-slate-300 leading-relaxed mb-6">
+                        <strong>NorthStar Diving</strong> olarak Kemer’de tam <strong>25 yıldır</strong> binlerce yerli ve yabancı misafirimize su altının büyülü dünyasını güvenle tanıtıyoruz. Bizi diğer turlardan ayıran en büyük fark; 80-100 kişilik kalabalık ticari tekneler yerine <strong>maksimum 30 kişilik kendi özel dalış teknemiz NORTHSTAR</strong> ile hizmet vermemizdir.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="glass-panel p-4 rounded-2xl flex items-start gap-3">
+                            <i class="fa-solid fa-users-viewfinder text-aqua-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 data-i18n="about_c1_t" class="font-bold text-white text-sm">Maksimum 30 Kişi</h4>
+                                <p data-i18n="about_c1_d" class="text-xs text-slate-400 mt-0.5">Sıra beklemeden, kalabalıktan uzak, ferah ve konforlu bir gün.</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-2xl flex items-start gap-3">
+                            <i class="fa-solid fa-heart text-rose-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 data-i18n="about_c2_t" class="font-bold text-white text-sm">Memnuniyet Garantili Eğitmenler</h4>
+                                <p data-i18n="about_c2_d" class="text-xs text-slate-400 mt-0.5">Sabırlı, güler yüzlü ve uluslararası lisanslı uzman kadro.</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-2xl flex items-start gap-3">
+                            <i class="fa-solid fa-handshake-angle text-emerald-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 data-i18n="about_c3_t" class="font-bold text-white text-sm">Kapıda Birebir Karşılama</h4>
+                                <p data-i18n="about_c3_d" class="text-xs text-slate-400 mt-0.5">G Marina kapısında ekibimiz sizi karşılar ve tekneye eşlik eder.</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-2xl flex items-start gap-3">
+                            <i class="fa-solid fa-shield-heart text-gold-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 data-i18n="about_c4_t" class="font-bold text-white text-sm">25 Yıllık Güven</h4>
+                                <p data-i18n="about_c4_d" class="text-xs text-slate-400 mt-0.5">Bakımlı ekipmanlar, tam güvenlik donanımı ve kusursuz rota.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-6 pt-4 border-t border-slate-800">
+                        <div>
+                            <div data-i18n="stat1_v" class="font-display font-extrabold text-3xl text-gold-400">25 Yıl</div>
+                            <div data-i18n="stat1_l" class="text-xs text-slate-400">Kemer Dalış Tecrübesi</div>
+                        </div>
+                        <div class="h-10 w-px bg-slate-800"></div>
+                        <div>
+                            <div data-i18n="stat2_v" class="font-display font-extrabold text-3xl text-aqua-400">30 Kişi</div>
+                            <div data-i18n="stat2_l" class="text-xs text-slate-400">Butik Tekne Kapasitesi</div>
+                        </div>
+                        <div class="h-10 w-px bg-slate-800"></div>
+                        <div>
+                            <div class="font-display font-extrabold text-3xl text-white">4.9 ★</div>
+                            <div data-i18n="stat3_l" class="text-xs text-slate-400">Eğitmen Memnuniyeti</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tekne ve Dalış Görselleri -->
+                <div class="lg:col-span-6 order-1 lg:order-2 grid grid-cols-2 gap-4">
+                    <div class="relative rounded-3xl overflow-hidden border border-aqua-500/20 shadow-xl h-72 sm:h-80">
+                        <img src="image_500ea5.jpg" 
+                             onerror="this.src='https://placehold.co/600x800/0c2c4d/00b4d8?text=NORTHSTAR+Teknesi'"
+                             alt="NORTHSTAR Dalış Teknesi" class="w-full h-full object-cover">
+                        <div data-i18n="img_badge1" class="absolute bottom-3 left-3 bg-navy-950/85 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-aqua-400">
+                            Tekne: NORTHSTAR
+                        </div>
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden border border-aqua-500/20 shadow-xl h-72 sm:h-80 mt-8">
+                        <img src="image_507384.jpg" 
+                             onerror="this.src='https://placehold.co/600x800/0c2c4d/00b4d8?text=Uzman+Egitmenler'"
+                             alt="NorthStar Diving Arka Platform ve Ekip" class="w-full h-full object-cover">
+                        <div data-i18n="img_badge2" class="absolute bottom-3 left-3 bg-navy-950/85 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-gold-400">
+                            25 Yıllık Uzman Kadro
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOTOĞRAF GALERİSİ & INSTAGRAM -->
+    <section id="galeri" class="py-24 bg-navy-900/50 border-t border-aqua-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span data-i18n="gal_tag" class="text-aqua-400 font-bold tracking-wider uppercase text-xs">Gerçek Su Altı & Tekne Karelerimiz</span>
+                    <h2 data-i18n="gal_heading" class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">NorthStar Dalış Galerisi</h2>
+                </div>
+                <a href="https://www.instagram.com/northstar.diving/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 via-pink-500 to-purple-600 text-white font-bold text-xs sm:text-sm shadow-lg hover:opacity-95 transition self-start md:self-auto">
+                    <i class="fa-brands fa-instagram text-lg"></i> <span data-i18n="gal_ig_btn">@northstar.diving Instagram'da Takip Et</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
+                <!-- Foto 1 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="image_500ea5.jpg" alt="NORTHSTAR Özel Dalış Teknesi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_1">NORTHSTAR Teknemiz</span></span>
+                    </div>
+                </div>
+                <!-- Foto 2 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="image_507384.jpg" alt="Dalış Platformu ve Eğitmenlerimiz" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_2">Dalış Platformu & Ekibimiz</span></span>
+                    </div>
+                </div>
+                <!-- Foto 3 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="Koridoru Aydınlatan Batık Dalgıcı.png" alt="Paris II Batığı İç Geçişi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_3">Paris II Batığı İç Geçiş</span></span>
+                    </div>
+                </div>
+                <!-- Foto 4 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="image_507083.jpg" alt="Kemer Su Altı Heykel Müzesi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_4">Su Altı Heykel Müzesi</span></span>
+                    </div>
+                </div>
+                <!-- Foto 5 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="Turkuaz Sularda Renkli Balık Sürüsü.png" alt="Turkuaz Sularda Balık Sürüsü" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_5">Turkuaz Sularda Balık Sürüsü</span></span>
+                    </div>
+                </div>
+                <!-- Foto 6 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="image_501a49.jpg" alt="Akdeniz Resifleri ve Çütre Balığı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_6">Akdeniz Resif Canlılığı</span></span>
+                    </div>
+                </div>
+                <!-- Foto 7 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="image_5015b2.jpg" alt="Su Altında Balıklarla Etkileşim" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_7">Balık Sürüleriyle Dalış</span></span>
+                    </div>
+                </div>
+                <!-- Foto 8 -->
+                <div onclick="openLightbox(this)" class="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-aqua-500/20">
+                    <img src="image_5019ab.jpg" alt="Kemer Kayalıkları ve Su Altı Dokusu" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition flex items-end p-3">
+                        <span class="text-white text-xs font-semibold bg-navy-950/85 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-expand mr-1 text-aqua-400"></i> <span data-i18n="gal_8">Kemer Resif Dokusu</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GOOGLE YORUMLARI & KONUM (G MARİNA VİNCİN YANI) -->
+    <section id="yorumlar" class="py-24 bg-navy-950 border-t border-aqua-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <!-- Google Puan Özeti -->
+            <div class="glass-panel rounded-3xl p-8 mb-12 flex flex-col md:flex-row items-center justify-between gap-6 border-gold-400/30">
+                <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-lg shrink-0">
+                        <i class="fa-brands fa-google text-3xl text-blue-600"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-center sm:justify-start gap-2">
+                            <span class="font-display font-extrabold text-3xl text-white">4.9</span>
+                            <div class="flex text-gold-400 text-lg">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p data-i18n="rev_summary" class="text-slate-300 text-sm mt-1">
+                            <strong>NorthStar Diving Kemer</strong> • Google İşletme Profili Misafir Değerlendirmeleri
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2.5 px-5 py-3 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-bold text-xs sm:text-sm">
+                    <i class="fa-solid fa-circle-check text-base"></i>
+                    <span>%98 Misafir Memnuniyeti</span>
+                </div>
+            </div>
+
+            <!-- Müşteri Yorum Kartları -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <div class="glass-panel p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-aqua-600 text-white font-bold flex items-center justify-center">SK</div>
+                            <div>
+                                <div class="font-bold text-white text-sm">Sinan Karabulut</div>
+                                <div data-i18n="rev_meta" class="text-xs text-slate-400">Google Yorumu • ★★★★★</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-slate-400"></i>
+                    </div>
+                    <p data-i18n="rev_1" class="text-slate-300 text-sm leading-relaxed">
+                        "Gerçekten tecrübeli bir ekibe sahipler Marina kapısında bizi karşıladılar eğitmenler harikaydı"
+                    </p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center">SA</div>
+                            <div>
+                                <div class="font-bold text-white text-sm">Selin Av.</div>
+                                <div data-i18n="rev_meta" class="text-xs text-slate-400">Google Yorumu • ★★★★★</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-slate-400"></i>
+                    </div>
+                    <p data-i18n="rev_2" class="text-slate-300 text-sm leading-relaxed">
+                        "İkili indirimli paketi aldık eşimle İkimiz de yüzme bilmiyorduk ama eğitmenler o kadar sakin ve ilgiliydi ki su altında kendimizi çok güvende hissettik Su altı videolarımız da çok güzel çıkmış northstar ekibine teşekkürler :)"
+                    </p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center">EÇ</div>
+                            <div>
+                                <div class="font-bold text-white text-sm">Eda Çınar</div>
+                                <div data-i18n="rev_meta" class="text-xs text-slate-400">Google Yorumu • ★★★★★</div>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-slate-400"></i>
+                    </div>
+                    <p data-i18n="rev_3" class="text-slate-300 text-sm leading-relaxed">
+                        "Paris batığı için Northstar divingi seçtim ekipmanlar bakımlıydı tekne ferah ve yemek güzeldi. Kemerdeki en iyi dalış ekibi."
+                    </p>
+                </div>
+            </div>
+
+            <!-- KONUM & G MARİNA BULUŞMA REHBERİ -->
+            <div id="konum" class="glass-panel rounded-3xl p-8 sm:p-10 border border-aqua-500/30">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7">
+                        <span data-i18n="loc_tag" class="text-aqua-400 font-bold uppercase text-xs tracking-wider">Konum & Ulaşım Kolaylığı</span>
+                        <h3 data-i18n="loc_heading" class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-2 mb-4">
+                            Kemer Marina • G Marina (Vincin Yanı)
+                        </h3>
+                        <p data-i18n="loc_desc" class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                            <strong>NORTHSTAR</strong> teknemiz Kemer Marina içerisinde, <strong>G Marina bölümünde vincin hemen yanında</strong> bağlıdır. Kendi aracıyla gelen veya ücretsiz otel transferimizi kullanan misafirlerimiz için buluşma sürecimiz çok pratiktir:
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3.5 bg-navy-950/70 p-4 rounded-2xl border border-slate-800">
+                                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-van-shuttle"></i>
+                                </div>
+                                <div>
+                                    <h4 data-i18n="loc_c1_t" class="font-bold text-white text-sm">Ücretsiz Transfer & Kapıda Karşılama</h4>
+                                    <p data-i18n="loc_c1_d" class="text-xs text-slate-400 mt-1">Servis aracımız sizi otelinizden alıp <strong>G Marina kapısına</strong> kadar getirir. Marina kapısında ekibimiz sizi bizzat karşılar ve teknemize kadar eşlik eder.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 bg-navy-950/70 p-4 rounded-2xl border border-slate-800">
+                                <div class="w-9 h-9 rounded-xl bg-aqua-500/20 text-aqua-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-anchor"></i>
+                                </div>
+                                <div>
+                                    <h4 data-i18n="loc_c2_t" class="font-bold text-white text-sm">Tekne Bağlama Noktası</h4>
+                                    <p data-i18n="loc_c2_d" class="text-xs text-slate-400 mt-1">Kemer Marina, G Marina İskelesi — <strong>Vincin Yanı (Tekne Adı: NORTHSTAR)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 flex flex-col gap-4">
+                        <div class="bg-navy-950 rounded-2xl p-6 border border-aqua-500/20 text-center">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mx-auto mb-3">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <h4 data-i18n="loc_cta_t" class="font-display font-bold text-lg text-white mb-1">Hemen Konum & Bilgi Alın</h4>
+                            <p data-i18n="loc_cta_d" class="text-xs text-slate-400 mb-4">Otel transfer saatinizi öğrenmek veya marina konumu istemek için tek tıkla yazın ya da arayın.</p>
+                            <a href="tel:+905412851607" class="inline-flex items-center justify-center gap-2 text-aqua-400 hover:text-aqua-300 font-bold text-sm mb-4">
+                                <i class="fa-solid fa-phone"></i> 0541 285 16 07
+                            </a>
+                            <button onclick="openWhatsAppModal('location')" class="w-full py-3.5 px-5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 transition flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> <span data-i18n="loc_cta_btn">WhatsApp’tan Konum İste</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-900 border-t border-aqua-500/20 pt-14 pb-24 md:pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-10 border-b border-slate-800">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-aqua-500 flex items-center justify-center">
+                            <i class="fa-solid fa-compass text-white text-lg"></i>
+                        </div>
+                        <span class="font-display font-extrabold text-xl text-white">NORTHSTAR <span class="text-aqua-400">DIVING</span></span>
+                    </div>
+                    <p data-i18n="footer_desc" class="text-slate-400 text-xs sm:text-sm max-w-md">
+                        25 yıllık tecrübe, 30 kişilik özel NORTHSTAR teknemiz ve uzman eğitmenlerimizle Kemer G Marina’da hizmetinizdeyiz.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3">
+                    <a href="tel:+905412851607" class="px-4 py-2.5 rounded-xl bg-navy-800 hover:bg-aqua-600 text-white text-xs font-bold flex items-center gap-2 transition">
+                        <i class="fa-solid fa-phone text-sm"></i> 0541 285 16 07
+                    </a>
+                    <a href="https://www.instagram.com/northstar.diving/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-navy-800 hover:bg-pink-600 text-white text-xs font-bold flex items-center gap-2 transition">
+                        <i class="fa-brands fa-instagram text-base"></i> @northstar.diving
+                    </a>
+                    <button onclick="openWhatsAppModal('general')" class="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold flex items-center gap-2 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i> <span data-i18n="footer_wa">WhatsApp Hattı</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-3">
+                <p data-i18n="footer_copy">© 2026 NorthStar Diving Kemer. Tüm hakları saklıdır.</p>
+                <p data-i18n="footer_loc">Kemer Marina • G Marina (Vincin Yanı) • Tekne: NORTHSTAR</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SAĞ ALT SABİT WHATSAPP BUTONU -->
+    <button onclick="openWhatsAppModal('live')" 
+            aria-label="WhatsApp İletişim"
+            class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition transform hover:scale-110 wa-pulse">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </button>
+
+    <!-- İNTERAKTİF WHATSAPP REZERVASYON MODALI -->
+    <div id="wa-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-950/85 backdrop-blur-sm p-4">
+        <div class="bg-navy-900 border border-emerald-500/40 rounded-3xl max-w-md w-full p-6 shadow-2xl relative">
+            <button onclick="closeWhatsAppModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-navy-800 text-slate-400 hover:text-white flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                    <h3 data-i18n="wa_modal_title" class="font-display font-bold text-lg text-white">NorthStar WhatsApp Rezervasyon</h3>
+                    <p data-i18n="wa_modal_sub" class="text-xs text-gold-400">Kış Dönemi Bilgi Hattı: 0541 285 16 07</p>
+                </div>
+            </div>
+
+            <!-- Kişi Sayısı ve Tarih Seçimi -->
+            <div class="grid grid-cols-2 gap-3 mb-4">
+                <div>
+                    <label data-i18n="wa_date_label" class="block text-[11px] text-slate-400 mb-1">Dalış Tarihi (İsteğe Bağlı)</label>
+                    <input type="date" id="wa-date" onchange="updateWaMessage()" class="w-full bg-navy-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:border-aqua-400 outline-none">
+                </div>
+                <div>
+                    <label data-i18n="wa_guests_label" class="block text-[11px] text-slate-400 mb-1">Kişi Sayısı</label>
+                    <select id="wa-guests" onchange="updateWaMessage()" class="w-full bg-navy-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:border-aqua-400 outline-none">
+                        <option value="1" data-i18n="wa_g1">1 Kişi</option>
+                        <option value="2" selected data-i18n="wa_g2">2 Kişi</option>
+                        <option value="3" data-i18n="wa_g3">3 Kişi</option>
+                        <option value="4+" data-i18n="wa_g4">4+ Kişi (Grup)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bg-navy-950 rounded-2xl p-4 border border-slate-800 mb-5">
+                <div data-i18n="wa_selected_label" class="text-[11px] text-slate-400 mb-1">Seçilen Paket / Konu:</div>
+                <div id="wa-package-name" class="font-bold text-white text-sm mb-2">İkili Avantaj Paketi</div>
+                <div data-i18n="wa_preview_label" class="text-[11px] text-slate-400 mb-1">WhatsApp'a Gidecek Hazır Mesaj:</div>
+                <p id="wa-preview-text" class="text-xs text-emerald-300 bg-emerald-950/50 p-3 rounded-xl border border-emerald-500/20 italic leading-relaxed"></p>
+            </div>
+
+            <a id="wa-direct-link" href="#" target="_blank" rel="noopener noreferrer" onclick="closeWhatsAppModal()" class="w-full py-3.5 px-5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-500/25">
+                <i class="fa-brands fa-whatsapp text-lg"></i> <span data-i18n="wa_start_btn">WhatsApp Sohbetini Başlat</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox-modal" onclick="closeLightbox()" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 backdrop-blur-md p-4">
+        <button class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center text-xl">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="NorthStar Dalış Fotoğrafı" class="max-h-[85vh] max-w-[92vw] rounded-2xl shadow-2xl border border-white/10">
+    </div>
+
+    <!-- TOAST BİLDİRİM -->
+    <div id="toast-box" class="fixed top-24 left-1/2 -translate-x-1/2 z-50 hidden bg-navy-800 border border-aqua-400/50 text-white text-xs sm:text-sm px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-2.5 max-w-md text-center">
+        <i class="fa-solid fa-circle-info text-aqua-400"></i>
+        <span id="toast-msg">Bilgi</span>
+    </div>
+
+    <script>
+        // Mobil Menü
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        // Çoklu Dil Çeviri Sözlüğü (TR / EN / RU - EN & RU Dolar Kuru $)
+        const translations = {
+            tr: {
+                winter_pill: "Kış Sezonu Molası",
+                winter_banner_text: "2026 Sezonunu Tamamladık! Teknemiz bakımda • 2027 Sezonunda Sizleri de Bekliyoruz (Erken Bilgi & Ön Kayıt Açık)",
+                page_title: "NorthStar Diving Kemer | 2027 Sezonunda Görüşmek Üzere",
+                top_location: "Kemer Marina, G Marina (Vincin Yanı) • Tekne: NORTHSTAR",
+                top_heritage: "25 Yıllık Tecrübe • Maksimum 30 Kişilik VIP Kapasite",
+                nav_home: "Ana Sayfa",
+                nav_packages: "Dalış Paketleri",
+                nav_spots: "Paris II & Üç Adalar",
+                nav_about: "Teknemiz & Hakkımızda",
+                nav_gallery: "Galeri",
+                nav_contact: "G Marina & İletişim",
+                btn_wa_header: "WhatsApp Bilgi",
+                hero_badge_years: "25 Yıllık Tecrübe",
+                hero_google_rating: "4.9 Google Puanı",
+                hero_title: '2027 Sezonunda <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-300 to-aqua-400">Derinliklerde Buluşalım</span>',
+                hero_subtitle: 'Kış dönemi boyunca teknemiz ve ekipmanlarımız yeni sezon için bakıma alındı. <strong class="text-white">2027 baharından itibaren</strong> 30 kişilik özel NORTHSTAR teknemizle Kemer G Marina’dan yeniden denize açılıyoruz!',
+                hero_btn_packages: "Dalış Paketlerini İncele",
+                hero_btn_wa: "WhatsApp’tan Yer Ayırt",
+                feat_boat_title: "30 Kişilik VIP Tekne",
+                feat_boat_sub: "NORTHSTAR Özel Teknemiz",
+                feat_transfer_title: "Ücretsiz Transfer",
+                feat_transfer_sub: "G Marina Kapıda Karşılama",
+                feat_lunch_title: "Öğle Yemeği Dahil",
+                feat_lunch_sub: "Tam Ekipman + Rehberlik",
+                feat_photo_title: "Su Altı Foto & Video",
+                feat_photo_sub: "İsteğe Bağlı Profesyonel Çekim",
+                pkg_tag: "Şu An Kış Molasındayız • 2027 Sezonu Hazırlıkları",
+                pkg_heading: "2027 Sezonu Dalış Paketlerimiz",
+                pkg_desc: 'Kış sezonunda turlarımıza ara verdik. Aşağıdaki paket ve güncel tarifelerimizi inceleyebilir, <strong>2027 sezonu açılış tarihi ve erken rezervasyon</strong> için WhatsApp hattımızdan bize ulaşabilirsiniz.',
+                
+                p1_badge: "Keşif Dalışı",
+                p1_title: "Tek Kişilik Dalış Turu",
+                p1_desc: "İlk kez dalacaklar veya yüzme bilmeyenler için birebir eğitmen eşliğinde güvenli keşif.",
+                price_single: "3.000 ₺",
+                per_person: "/ Kişi",
+                inc_short: "Transfer + Yemek + Ekipman Dahil",
+                p1_f1: "Kemer koylarında <strong>2 Adet Dalış</strong>",
+                p1_f2: "Ücretsiz otel gidiş-dönüş transferi",
+                p1_f3: "Tüm dalış ekipmanları & tüp",
+                p1_f4: "Teknede öğle yemeği <em>(İçecek hariç)</em>",
+                p1_f5: "Su altı foto & video <em>(İsteğe bağlı ekstra)</em>",
+                btn_book_wa: "WhatsApp Yer Ayırt",
+
+                badge_discount: "500 ₺ İndirimli • En Popüler",
+                p2_badge: "2 Kişilik Kampanya",
+                p2_title: "İkili Avantaj Paketi",
+                p2_desc: "Çiftler ve arkadaşlar için özel fiyat! Birlikte dalın, toplamda 500 ₺ indirim kazanın.",
+                price_double_old: "6.000 ₺",
+                save_tag: "500 ₺ Kazanç",
+                price_double: "5.500 ₺",
+                per_two: "/ 2 Kişi",
+                p2_f1: "2 Kişi için <strong>2'şer Adet Dalış</strong>",
+                p2_f2: "Su altında yan yana dalış imkanı",
+                p2_f3: "2 Kişi için otel transferi & ekipman",
+                p2_f4: "2 Kişi öğle yemeği <em>(İçecek hariç)</em>",
+                p2_f5: "Çiftlere özel su altı çekim <em>(Opsiyonel)</em>",
+                btn_book_discount: "İndirimli Yer Ayırt",
+
+                p3_badge: "Bröve Şartlı",
+                p3_title: "Paris II Batığı Dalışı",
+                p3_desc: "Dünyanın en iyi 100 batığından biri olan 1917 yapımı tarihi savaş gemisine özel dalış.",
+                price_paris: "4.000 ₺",
+                per_certified: "/ Sertifikalı",
+                p3_depth: "Derinlik: 24m - 33m",
+                p3_f1: "<strong>Belge Şartı:</strong> CMAS 2* / PADI AOWD veya dengi derin dalış brövesi",
+                p3_f2: "1 Batık Dalışı + 1 Resif Dalışı",
+                p3_f3: "Batık uzmanı lider eşliğinde",
+                p3_f4: "Transfer + Ekipman + Öğle Yemeği",
+                p3_f5: "Batık hatıra çekimi <em>(Opsiyonel)</em>",
+                p3_btn: "Belge Kontrol & Rezervasyon",
+
+                p4_badge: "Özel Rota",
+                p4_title: "Üç Adalar Dalış Turu",
+                p4_desc: "Tekirova açıklarında su altı mağaraları, dik duvarlar ve eşsiz Akdeniz canlılığı.",
+                price_islands: "4.000 - 4.250 ₺",
+                p4_sub: "Mesafe ve Sezona Göre Özel Tur",
+                p4_f1: "Üç Adalar bölgesinde <strong>2 Özel Dalış</strong>",
+                p4_f2: "Mağara, kanyon ve vatoz/kaplumbağa rotası",
+                p4_f3: "30 metreyi bulan cam gibi görüş",
+                p4_f4: "Transfer + Ekipman + Öğle Yemeği",
+                p4_f5: "HD Foto & Video <em>(Opsiyonel)</em>",
+                p4_btn: "Tur Günü & Fiyat Sor",
+
+                photo_note_title: "Anılarınızı Ölümsüzleştirin: Profesyonel Su Altı Fotoğraf & Video Çekimi",
+                photo_note_desc: "Dalış boyunca su altı kameramanlarımız tarafından çekilen yüksek çözünürlüklü fotoğraf ve videolarınızı tur sonunda telefonunuza aktarabilirsiniz. <em>(İsteğe bağlı ekstra hizmettir; teknede alınan içecekler de ekstra olarak ücretlendirilir.)</em>",
+
+                spots_tag: "Efsanevi Akdeniz Rotaları",
+                spots_heading: "Kemer’in İki Büyük Hazinesi",
+                spots_desc: "Kemer Marina’dan kalkan NORTHSTAR teknemizle hem dünya dalış literatürüne girmiş tarihi batıklara hem de el değmemiş ada resiflerine ulaşıyoruz.",
+                spot1_badge: "Sertifikalı Dalgıçlara Özel",
+                spot1_tag1: "Derinlik: 24m - 33m",
+                spot1_tag2: "1917 Savaş Batığı",
+                spot1_title: "Paris II Batığı (4.000 ₺)",
+                spot1_desc: "1. Dünya Savaşı sırasında 1917 yılında batırılan 50 metrelik Fransız savaş gemisi <strong>Paris II</strong>, üzerindeki uçaksavar topları ve torpido kovanlarıyla su altında adeta bir açık hava müzesidir.",
+                spot1_cert_title: "Gerekli Dalış Sertifikası:",
+                spot1_cert_desc: "Derinlik sebebiyle en az <strong>CMAS 2 Yıldız</strong> veya <strong>PADI Advanced Open Water (AOWD)</strong> belgesi zorunludur.",
+                spot1_btn: "Sertifikanı İlet & Yer Ayırt",
+
+                spot2_badge: "Akdeniz'in Akvaryumu",
+                spot2_tag1: "Görüş: 30+ Metre",
+                spot2_tag2: "Mağara & Resifler",
+                spot2_title: "Üç Adalar Dalış Turu (4.000 - 4.250 ₺)",
+                spot2_desc: "Tekirova açıklarında yer alan <strong>Üç Adalar</strong>; su altı mağaraları, dik duvarları, baraküda sürüleri, vatozlar ve Caretta Caretta deniz kaplumbağaları ile Kemer’in en zengin dalış bölgesidir.",
+                spot2_detail_title: "Tur Detayı:",
+                spot2_detail_desc: "Uzun mesafe özel rotamızdır; transfer, 2 dalış, ekipman ve öğle yemeği dahildir. Sertifikalı ve tecrübeli dalgıçlar için uygundur.",
+                spot2_btn: "Üç Adalar Tur Günü Sor",
+
+                about_tag: "25 Senelik Köklü Tecrübe",
+                about_heading: 'Neden <span class="text-aqua-400">NORTHSTAR</span> Teknesini Tercih Etmelisiniz?',
+                about_desc: "<strong>NorthStar Diving</strong> olarak Kemer’de tam <strong>25 yıldır</strong> binlerce yerli ve yabancı misafirimize su altının büyülü dünyasını güvenle tanıtıyoruz. Bizi diğer turlardan ayıran en büyük fark; 80-100 kişilik kalabalık ticari tekneler yerine <strong>maksimum 30 kişilik kendi özel dalış teknemiz NORTHSTAR</strong> ile hizmet vermemizdir.",
+                about_c1_t: "Maksimum 30 Kişi",
+                about_c1_d: "Sıra beklemeden, kalabalıktan uzak, ferah ve konforlu bir gün.",
+                about_c2_t: "Memnuniyet Garantili Eğitmenler",
+                about_c2_d: "Sabırlı, güler yüzlü ve uluslararası lisanslı uzman kadro.",
+                about_c3_t: "Kapıda Birebir Karşılama",
+                about_c3_d: "G Marina kapısında ekibimiz sizi karşılar ve tekneye eşlik eder.",
+                about_c4_t: "25 Yıllık Güven",
+                about_c4_d: "Bakımlı ekipmanlar, tam güvenlik donanımı ve kusursuz rota.",
+                stat1_v: "25 Yıl",
+                stat1_l: "Kemer Dalış Tecrübesi",
+                stat2_v: "30 Kişi",
+                stat2_l: "Butik Tekne Kapasitesi",
+                stat3_l: "Eğitmen Memnuniyeti",
+                img_badge1: "Tekne: NORTHSTAR",
+                img_badge2: "25 Yıllık Uzman Kadro",
+
+                gal_tag: "Gerçek Su Altı & Tekne Karelerimiz",
+                gal_heading: "NorthStar Dalış Galerisi",
+                gal_ig_btn: "@northstar.diving Instagram'da Takip Et",
+                gal_1: "NORTHSTAR Teknemiz",
+                gal_2: "Dalış Platformu & Ekibimiz",
+                gal_3: "Paris II Batığı İç Geçiş",
+                gal_4: "Su Altı Heykel Müzesi",
+                gal_5: "Turkuaz Sularda Balık Sürüsü",
+                gal_6: "Akdeniz Resif Canlılığı",
+                gal_7: "Balık Sürüleriyle Dalış",
+                gal_8: "Kemer Resif Dokusu",
+
+                rev_summary: "<strong>NorthStar Diving Kemer</strong> • Google İşletme Profili Misafir Değerlendirmeleri",
+                rev_btn: "Google’da Yorum Yap",
+                rev_meta: "Google Yorumu • ★★★★★",
+                rev_1: '"Gerçekten tecrübeli bir ekibe sahipler Marina kapısında bizi karşıladılar eğitmenler harikaydı"',
+                rev_2: '"İkili indirimli paketi aldık eşimle İkimiz de yüzme bilmiyorduk ama eğitmenler o kadar sakin ve ilgiliydi ki su altında kendimizi çok güvende hissettik Su altı videolarımız da çok güzel çıkmış northstar ekibine teşekkürler :)"',
+                rev_3: '"Paris batığı için Northstar divingi seçtim ekipmanlar bakımlıydı tekne ferah ve yemek güzeldi. Kemerdeki en iyi dalış ekibi."',
+                rev_toast: " ",
+
+                loc_tag: "Konum & Ulaşım Kolaylığı",
+                loc_heading: "Kemer Marina • G Marina (Vincin Yanı)",
+                loc_desc: "<strong>NORTHSTAR</strong> teknemiz Kemer Marina içerisinde, <strong>G Marina bölümünde vincin hemen yanında</strong> bağlıdır. Kendi aracıyla gelen veya ücretsiz otel transferimizi kullanan misafirlerimiz için buluşma sürecimiz çok pratiktir:",
+                loc_c1_t: "Ücretsiz Transfer & Kapıda Karşılama",
+                loc_c1_d: "Servis aracımız sizi otelinizden alıp <strong>G Marina kapısına</strong> kadar getirir. Marina kapısında ekibimiz sizi bizzat karşılar ve teknemize kadar eşlik eder.",
+                loc_c2_t: "Tekne Bağlama Noktası",
+                loc_c2_d: "Kemer Marina, G Marina İskelesi — <strong>Vincin Yanı (Tekne Adı: NORTHSTAR)</strong>",
+                loc_cta_t: "Hemen Konum & Bilgi Alın",
+                loc_cta_d: "Otel transfer saatinizi öğrenmek veya marina konumu istemek için tek tıkla yazın ya da arayın.",
+                loc_cta_btn: "WhatsApp’tan Konum İste",
+
+                footer_desc: "25 yıllık tecrübe, 30 kişilik özel NORTHSTAR teknemiz ve uzman eğitmenlerimizle Kemer G Marina’da hizmetinizdeyiz.",
+                footer_wa: "WhatsApp Hattı",
+                footer_copy: "© 2026 NorthStar Diving Kemer. Tüm hakları saklıdır.",
+                footer_loc: "Kemer Marina • G Marina (Vincin Yanı) • Tekne: NORTHSTAR",
+
+                wa_modal_title: "NorthStar WhatsApp Rezervasyon",
+                wa_modal_sub: "Hattımız: 0541 285 16 07",
+                wa_date_label: "Dalış Tarihi (İsteğe Bağlı)",
+                wa_guests_label: "Kişi Sayısı",
+                wa_g1: "1 Kişi",
+                wa_g2: "2 Kişi",
+                wa_g3: "3 Kişi",
+                wa_g4: "4+ Kişi (Grup)",
+                wa_selected_label: "Seçilen Paket / Konu:",
+                wa_preview_label: "WhatsApp'a Gidecek Hazır Mesaj:",
+                wa_start_btn: "WhatsApp Sohbetini Başlat"
+            },
+            en: {
+                winter_pill: "Winter Season Break",
+                winter_banner_text: "We Wrapped Up 2026! Our boat is in maintenance • We Welcome You in the 2027 Season (Early Info Open)",
+                page_title: "NorthStar Diving Kemer | See You in the 2027 Season",
+                top_location: "Kemer Marina, G Marina (Next to Crane) • Boat: NORTHSTAR",
+                top_heritage: "25 Years of Experience • Max 30 Guests Boutique Capacity",
+                nav_home: "Home",
+                nav_packages: "Diving Packages",
+                nav_spots: "Paris II & Three Islands",
+                nav_about: "Our Boat & About",
+                nav_gallery: "Gallery",
+                nav_contact: "Location & Contact",
+                btn_wa_header: "WhatsApp Info",
+                hero_badge_years: "Winter Break • See You in 2027 Season",
+                hero_google_rating: "4.9 Google Rating",
+                hero_title: 'Let’s Meet Underwater in <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-300 to-aqua-400">the 2027 Season</span>',
+                hero_subtitle: 'Our boat and gear are currently undergoing winter maintenance. Starting <strong class="text-white">Spring 2027</strong>, we look forward to welcoming you back aboard our private 30-guest NORTHSTAR boat at Kemer G Marina!',
+                hero_btn_packages: "Explore 2027 Packages",
+                hero_btn_wa: "Ask About 2027 Season",
+                feat_boat_title: "30-Guest VIP Boat",
+                feat_boat_sub: "Private NORTHSTAR Boat",
+                feat_transfer_title: "Free Hotel Transfer",
+                feat_transfer_sub: "Personal Welcome at G Marina Gate",
+                feat_lunch_title: "Lunch Included",
+                feat_lunch_sub: "Full Equipment + Guiding",
+                feat_photo_title: "Underwater Photo/Video",
+                feat_photo_sub: "Optional Pro Shooting",
+                pkg_tag: "Currently Closed for Winter • 2027 Preparations",
+                pkg_heading: "2027 Season Diving Packages",
+                pkg_desc: 'We are currently on our winter break. Feel free to browse our packages below and contact us via WhatsApp for <strong>2027 opening dates and early inquiries</strong>.',
+
+                p1_badge: "Discovery Dive",
+                p1_title: "Single Diver Tour",
+                p1_desc: "Safe, one-on-one guided discovery for first-timers and non-swimmers with certified instructors.",
+                price_single: "$75",
+                per_person: "/ Person",
+                inc_short: "Transfer + Lunch + Gear Included",
+                p1_f1: "<strong>2 Dives</strong> in crystal-clear Kemer bays",
+                p1_f2: "Free round-trip hotel transfer",
+                p1_f3: "All scuba diving equipment & tank",
+                p1_f4: "Lunch on board <em>(Drinks excluded)</em>",
+                p1_f5: "Underwater photo & video <em>(Optional extra)</em>",
+                btn_book_wa: "Inquire for 2027",
+
+                badge_discount: "$15 OFF • Most Popular",
+                p2_badge: "2-Person Special",
+                p2_title: "Duo Advantage Package",
+                p2_desc: "Special rate for couples and friends! Dive together and save $15 in total.",
+                price_double_old: "$150",
+                save_tag: "Save $15",
+                price_double: "$135",
+                per_two: "/ 2 Guests",
+                p2_f1: "<strong>2 Dives each</strong> for 2 guests",
+                p2_f2: "Dive side-by-side underwater",
+                p2_f3: "Hotel transfer & full gear for 2 guests",
+                p2_f4: "Lunch on board for 2 <em>(Drinks excluded)</em>",
+                p2_f5: "Couples underwater shooting <em>(Optional)</em>",
+                btn_book_discount: "2027 Promo Info",
+
+                p3_badge: "License Required",
+                p3_title: "Paris II Wreck Dive",
+                p3_desc: "Special wreck dive to the historic 1917 warship ranked among the world's top 100 wrecks.",
+                price_paris: "$100",
+                per_certified: "/ Certified",
+                p3_depth: "Depth: 24m - 33m",
+                p3_f1: "<strong>Requirement:</strong> CMAS 2* / PADI AOWD or equivalent deep diving license",
+                p3_f2: "1 Wreck Dive + 1 Reef Dive",
+                p3_f3: "Led by experienced wreck dive guide",
+                p3_f4: "Transfer + Equipment + Lunch",
+                p3_f5: "Wreck souvenir photo/video <em>(Optional)</em>",
+                p3_btn: "2027 Wreck Dive Info",
+
+                p4_badge: "Special Route",
+                p4_title: "Three Islands Dive Tour",
+                p4_desc: "Underwater caves, steep walls, and rich Mediterranean marine life off Tekirova.",
+                price_islands: "$100 - $110",
+                p4_sub: "Special Tour by Distance & Season",
+                p4_f1: "<strong>2 Special Dives</strong> at Three Islands",
+                p4_f2: "Caves, canyons & stingray/turtle route",
+                p4_f3: "Crystal visibility up to 30 meters",
+                p4_f4: "Transfer + Equipment + Lunch",
+                p4_f5: "HD Photo & Video <em>(Optional)</em>",
+                p4_btn: "Ask About 2027 Season",
+
+                photo_note_title: "Immortalize Your Memories: Professional Underwater Photo & Video Shooting",
+                photo_note_desc: "High-resolution photos and videos taken by our underwater cameramen throughout your dive can be transferred directly to your phone after the tour. <em>(Optional extra service; drinks on board are also charged separately.)</em>",
+
+                spots_tag: "Legendary Mediterranean Routes",
+                spots_heading: "Kemer’s Two Greatest Treasures",
+                spots_desc: "Departing from Kemer Marina aboard NORTHSTAR, we take you to both world-famous historic wrecks and untouched island reefs.",
+                spot1_badge: "Certified Divers Only",
+                spot1_tag1: "Depth: 24m - 33m",
+                spot1_tag2: "1917 Warship Wreck",
+                spot1_title: "Paris II Wreck ($100)",
+                spot1_desc: "Sunk in 1917 during WWI, the 50-meter French warship <strong>Paris II</strong> is a true underwater museum complete with anti-aircraft guns and torpedo tubes.",
+                spot1_cert_title: "Required Diving Certification:",
+                spot1_cert_desc: "Due to depth, at least a <strong>CMAS 2-Star</strong> or <strong>PADI Advanced Open Water (AOWD)</strong> certification is mandatory.",
+                spot1_btn: "Verify License & Book",
+
+                spot2_badge: "Mediterranean Aquarium",
+                spot2_tag1: "Visibility: 30+ Meters",
+                spot2_tag2: "Caves & Reefs",
+                spot2_title: "Three Islands Dive Tour ($100 - $110)",
+                spot2_desc: "Located off Tekirova, <strong>Three Islands</strong> is Kemer’s richest dive site featuring underwater caves, drop-offs, barracuda schools, stingrays, and Caretta Caretta sea turtles.",
+                spot2_detail_title: "Tour Details:",
+                spot2_detail_desc: "Long-distance special route; includes transfer, 2 dives, full gear, and lunch. Ideal for certified and experienced divers.",
+                spot2_btn: "Ask Three Islands Schedule",
+
+                about_tag: "25 Years of Proven Heritage",
+                about_heading: 'Why Choose <span class="text-aqua-400">NORTHSTAR</span> Boat?',
+                about_desc: "As <strong>NorthStar Diving</strong>, we have been safely introducing thousands of guests to the magic of the underwater world in Kemer for <strong>25 years</strong>. Unlike crowded 80–100 passenger commercial boats, we operate exclusively with our <strong>private 30-guest boutique dive boat NORTHSTAR</strong>.",
+                about_c1_t: "Max 30 Guests",
+                about_c1_d: "No waiting in lines, no crowds—just a spacious, relaxing day at sea.",
+                about_c2_t: "Satisfaction-Guaranteed Instructors",
+                about_c2_d: "Patient, friendly, internationally licensed diving professionals.",
+                about_c3_t: "Personal Gate Welcome",
+                about_c3_d: "Our team greets you right at the G Marina gate and escorts you aboard.",
+                about_c4_t: "25 Years of Trust",
+                about_c4_d: "Well-maintained gear, full safety equipment, and prime dive routes.",
+                stat1_v: "25 Yrs",
+                stat1_l: "Kemer Diving Experience",
+                stat2_v: "30 Guests",
+                stat2_l: "Boutique Boat Capacity",
+                stat3_l: "Instructor Satisfaction",
+                img_badge1: "Boat: NORTHSTAR",
+                img_badge2: "25 Years Expert Crew",
+
+                gal_tag: "Real Underwater & Boat Moments",
+                gal_heading: "NorthStar Diving Gallery",
+                gal_ig_btn: "Follow @northstar.diving on Instagram",
+                gal_1: "Our Boat NORTHSTAR",
+                gal_2: "Dive Platform & Crew",
+                gal_3: "Paris II Wreck Swim-Through",
+                gal_4: "Underwater Sculpture Museum",
+                gal_5: "Colorful Fish School in Turquoise",
+                gal_6: "Mediterranean Reef Life",
+                gal_7: "Diving with Fish Schools",
+                gal_8: "Kemer Reef Texture",
+
+                rev_summary: "<strong>NorthStar Diving Kemer</strong> • Google Business Profile Guest Reviews",
+                rev_btn: "Review on Google",
+                rev_meta: "Google Review • ★★★★★",
+                rev_1: '"They have a really experienced team, they welcomed us at the marina gate the instructors were great.” ',
+                rev_2: '"My husband and I bought a double discounted package. We both didnt know how to swim, but the instructors were so calm and interested that we felt very safe underwater. Our underwater videos were also very good for the northstar team. Thank you :)"',
+                rev_3: '"I chose Northstar diving for the Paris wreck, the equipment was well maintained, the boat it was spacious and the food was good. The best diving team in Kemer."',
+                rev_toast: "Once your Google Business Profile link is connected, this button will take guests directly to your 5-star review screen!",
+
+                loc_tag: "Location & Easy Access",
+                loc_heading: "Kemer Marina • G Marina (Next to the Crane)",
+                loc_desc: "Our boat <strong>NORTHSTAR</strong> is moored inside Kemer Marina at the <strong>G Marina section, right next to the crane</strong>. Whether you arrive by car or use our free hotel transfer, meeting us is effortless:",
+                loc_c1_t: "Free Transfer & Gate Greeting",
+                loc_c1_d: "Our shuttle picks you up from your hotel and drops you at the <strong>G Marina gate</strong>, where our team personally greets you and escorts you to the boat.",
+                loc_c2_t: "Boat Mooring Point",
+                loc_c2_d: "Kemer Marina, G Marina Pier — <strong>Next to the Crane (Boat Name: NORTHSTAR)</strong>",
+                loc_cta_t: "Get Location & Info Now",
+                loc_cta_d: "Message or call us in one click to learn your hotel pickup time or request the marina pin.",
+                loc_cta_btn: "Request Location via WhatsApp",
+
+                footer_desc: "Serving you at Kemer G Marina with 25 years of experience, our private 30-guest NORTHSTAR boat, and certified instructors.",
+                footer_wa: "WhatsApp Line",
+                footer_copy: "© 2026 NorthStar Diving Kemer. All rights reserved.",
+                footer_loc: "Kemer Marina • G Marina (Next to Crane) • Boat: NORTHSTAR",
+
+                wa_modal_title: "NorthStar WhatsApp Booking",
+                wa_modal_sub: "Winter Info Line: +90 541 285 16 07",
+                wa_date_label: "Dive Date (Optional)",
+                wa_guests_label: "Number of Guests",
+                wa_g1: "1 Guest",
+                wa_g2: "2 Guests",
+                wa_g3: "3 Guests",
+                wa_g4: "4+ Guests (Group)",
+                wa_selected_label: "Selected Package / Topic:",
+                wa_preview_label: "Ready Message for WhatsApp:",
+                wa_start_btn: "Start WhatsApp Chat"
+            },
+            ru: {
+                winter_pill: "Зимний перерыв",
+                winter_banner_text: "Сезон 2026 завершён! Яхта на техобслуживании • Ждём вас в сезоне 2027 (Ранняя запись открыта)",
+                page_title: "NorthStar Diving Кемер | До встречи в сезоне 2027",
+                top_location: "Кемер Марина, G Marina (возле крана) • Яхта: NORTHSTAR",
+                top_heritage: "25 лет опыта • Комфорт до 30 гостей",
+                nav_home: "Главная",
+                nav_packages: "Пакеты дайвинга",
+                nav_spots: "Рэк Париж II и Три Острова",
+                nav_about: "О нас и Яхта",
+                nav_gallery: "Галерея",
+                nav_contact: "Локация и Контакты",
+                btn_wa_header: "WhatsApp Инфо",
+                hero_badge_years: "Зимний перерыв • До встречи в сезоне 2027",
+                hero_google_rating: "Рейтинг 4.9 в Google",
+                hero_title: 'Встретимся на глубине в <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-300 to-aqua-400">сезоне 2027</span>',
+                hero_subtitle: 'Сейчас наша яхта и снаряжение проходят зимнее техобслуживание. С <strong class="text-white">весны 2027 года</strong> мы снова ждём вас на борту нашей комфортной яхты NORTHSTAR (до 30 гостей) в Кемер Марине!',
+                hero_btn_packages: "Пакеты на 2027 год",
+                hero_btn_wa: "Узнать о сезоне 2027",
+                feat_boat_title: "Яхта до 30 гостей",
+                feat_boat_sub: "Собственная яхта NORTHSTAR",
+                feat_transfer_title: "Бесплатный трансфер",
+                feat_transfer_sub: "Встреча у ворот G Marina",
+                feat_lunch_title: "Обед включен",
+                feat_lunch_sub: "Снаряжение + Инструктор",
+                feat_photo_title: "Подводное фото и видео",
+                feat_photo_sub: "Проф. съемка (по желанию)",
+                pkg_tag: "Зимний перерыв • Подготовка к сезону 2027",
+                pkg_heading: "Пакеты дайвинга на сезон 2027",
+                pkg_desc: 'Сейчас мы находимся на зимнем перерыве. Вы можете ознакомиться с нашими пакетами и написать нам в WhatsApp для уточнения <strong>дат открытия сезона 2027 и ранней записи</strong>.',
+
+                p1_badge: "Ознакомительный дайвинг",
+                p1_title: "Индивидуальный дайвинг-тур",
+                p1_desc: "Безопасное погружение за руку с инструктором для новичков и тех, кто не умеет плавать.",
+                price_single: "$75",
+                per_person: "/ Чел.",
+                inc_short: "Трансфер + Обед + Снаряжение",
+                p1_f1: "<strong>2 погружения</strong> в живописных бухтах Кемера",
+                p1_f2: "Бесплатный трансфер из отеля и обратно",
+                p1_f3: "Полный комплект снаряжения и баллон",
+                p1_f4: "Обед на яхте <em>(напитки не включены)</em>",
+                p1_f5: "Подводное фото и видео <em>(по желанию)</em>",
+                btn_book_wa: "Узнать на 2027 год",
+
+                badge_discount: "Скидка $15 • Хит продаж",
+                p2_badge: "Акция для двоих",
+                p2_title: "Парный выгодный пакет",
+                p2_desc: "Специальная цена для пар и друзей! Погружайтесь вместе и экономьте $15.",
+                price_double_old: "$150",
+                save_tag: "Выгода $15",
+                price_double: "$135",
+                per_two: "/ 2 Гостя",
+                p2_f1: "По <strong>2 погружения</strong> для каждого гостя",
+                p2_f2: "Совместное погружение бок о бок под водой",
+                p2_f3: "Трансфер и снаряжение для 2 гостей",
+                p2_f4: "Обед на яхте для двоих <em>(напитки отдельно)</em>",
+                p2_f5: "Парная подводная съемка <em>(опционально)</em>",
+                btn_book_discount: "Инфо по акции 2027",
+
+                p3_badge: "Нужен сертификат",
+                p3_title: "Погружение на рэк Париж II",
+                p3_desc: "Спецпогружение на исторический военный корабль 1917 года из топ-100 рэков мира.",
+                price_paris: "$100",
+                per_certified: "/ Сертиф.",
+                p3_depth: "Глубина: 24м - 33м",
+                p3_f1: "<strong>Требование:</strong> сертификат CMAS 2* / PADI AOWD или аналог",
+                p3_f2: "1 погружение на рэк + 1 рифовое погружение",
+                p3_f3: "В сопровождении гида-специалиста по рэкам",
+                p3_f4: "Трансфер + Снаряжение + Обед",
+                p3_f5: "Фото и видео на рэке <em>(опционально)</em>",
+                p3_btn: "Инфо по рэку на 2027",
+
+                p4_badge: "Особый маршрут",
+                p4_title: "Дайвинг-тур Три Острова",
+                p4_desc: "Подводные пещеры, отвесные стены и богатый подводный мир у побережья Текирова.",
+                price_islands: "$100 - $110",
+                p4_sub: "Спецтур в зависимости от сезона",
+                p4_f1: "<strong>2 спецпогружения</strong> в районе Трёх Островов",
+                p4_f2: "Пещеры, каньоны, скаты и морские черепахи",
+                p4_f3: "Кристальная видимость до 30 метров",
+                p4_f4: "Трансфер + Снаряжение + Обед",
+                p4_f5: "HD фото и видео <em>(опционально)</em>",
+                p4_btn: "Спросить о сезоне 2027",
+
+                photo_note_title: "Сохраните яркие эмоции: Профессиональная подводная фото- и видеосъемка",
+                photo_note_desc: "Фотографии и видео в высоком разрешении, снятые нашими подводными операторами во время погружения, можно перенести на телефон сразу после тура. <em>(Дополнительная услуга по желанию; напитки на яхте также оплачиваются отдельно.)</em>",
+
+                spots_tag: "Легендарные маршруты Средиземноморья",
+                spots_heading: "Два главных сокровища Кемера",
+                spots_desc: "На нашей яхте NORTHSTAR из Кемер Марины мы отправляемся как к всемирно известным затонувшим кораблям, так и к нетронутым островным рифам.",
+                spot1_badge: "Только для сертифицированных дайверов",
+                spot1_tag1: "Глубина: 24м - 33м",
+                spot1_tag2: "Военный рэк 1917 г.",
+                spot1_title: "Рэк Париж II ($100)",
+                spot1_desc: "Затопленный в 1917 году во время Первой мировой войны 50-метровый французский военный корабль <strong>Париж II</strong> — настоящий подводный музей с зенитными орудиями и торпедными аппаратами.",
+                spot1_cert_title: "Необходимый сертификат:",
+                spot1_cert_desc: "Из-за глубины обязателен сертификат уровня не ниже <strong>CMAS 2 звезды</strong> или <strong>PADI Advanced Open Water (AOWD)</strong>.",
+                spot1_btn: "Отправить сертификат и забронировать",
+
+                spot2_badge: "Аквариум Средиземноморья",
+                spot2_tag1: "Видимость: 30+ метров",
+                spot2_tag2: "Пещеры и рифы",
+                spot2_title: "Дайвинг-тур Три Острова ($100 - $110)",
+                spot2_desc: "Расположенные у берегов Текирова <strong>Три Острова</strong> — самый богатый дайв-спот Кемера с подводными пещерами, стенками, стаями барракуд, скатами и черепахами Каретта-Каретта.",
+                spot2_detail_title: "Детали тура:",
+                spot2_detail_desc: "Дальний специальный маршрут; включены трансфер, 2 погружения, снаряжение и обед. Подходит для сертифицированных и опытных дайверов.",
+                spot2_btn: "Уточнить расписание на Три Острова",
+
+                about_tag: "25 лет безупречной репутации",
+                about_heading: 'Почему выбирают яхту <span class="text-aqua-400">NORTHSTAR</span>?',
+                about_desc: "<strong>NorthStar Diving</strong> уже <strong>25 лет</strong> безопасно открывает волшебный подводный мир Кемера тысячам гостей. Наше главное отличие от больших туристических кораблей на 80–100 человек — собственная <strong>бутик-яхта NORTHSTAR вместимостью максимум 30 гостей</strong>.",
+                about_c1_t: "Максимум 30 гостей",
+                about_c1_d: "Без очередей и толпы — просторный и комфортный отдых в море.",
+                about_c2_t: "Опытные инструкторы",
+                about_c2_d: "Терпеливая, дружелюбная команда с международными лицензиями.",
+                about_c3_t: "Личная встреча у ворот",
+                about_c3_d: "Наша команда встречает вас прямо у входа в G Marina и провожает на яхту.",
+                about_c4_t: "25 лет доверия",
+                about_c4_d: "Обслуженное снаряжение, полная безопасность и лучшие маршруты.",
+                stat1_v: "25 лет",
+                stat1_l: "Опыт дайвинга в Кемере",
+                stat2_v: "30 гостей",
+                stat2_l: "Вместимость яхты",
+                stat3_l: "Оценка инструкторов",
+                img_badge1: "Яхта: NORTHSTAR",
+                img_badge2: "Команда с 25-летним опытом",
+
+                gal_tag: "Реальные кадры под водой и на яхте",
+                gal_heading: "Дайвинг-галерея NorthStar",
+                gal_ig_btn: "Подписаться на @northstar.diving в Instagram",
+                gal_1: "Наша яхта NORTHSTAR",
+                gal_2: "Дайв-платформа и команда",
+                gal_3: "Внутри рэка Париж II",
+                gal_4: "Подводный музей скульптур",
+                gal_5: "Стая рыб в бирюзовой воде",
+                gal_6: "Рифы Средиземного моря",
+                gal_7: "Погружение со стаями рыб",
+                gal_8: "Рельеф рифов Кемера",
+
+                rev_summary: "<strong>NorthStar Diving Kemer</strong> • Отзывы гостей в профиле Google",
+                rev_btn: "Оставить отзыв в Google",
+                rev_meta: "Отзыв Google • ★★★★★",
+                rev_1: '"У них действительно опытная команда, они приветствовали нас у ворот пристани для яхт инструкторы были великолепны"',
+                rev_2: '"Мы с женой купили пакет с двойной скидкой. Мы оба не умели плавать, но инструкторы были настолько спокойны и заботливы, что мы чувствовали себя в безопасности под водой. Наши подводные видео также были очень хороши для команды Northstar. Спасибо"',
+                rev_3: '"Я выбрал дайвинг Northstar для парижского крушения, оборудование было в хорошем состоянии, лодка он был просторным, и еда была хорошей. Лучшая команда по дайвингу в Кемере"',
+                rev_toast: "После привязки ссылки на ваш профиль Google эта кнопка сразу откроет окно для оценки в 5 звёзд!",
+
+                loc_tag: "Локация и удобство трансфера",
+                loc_heading: "Кемер Марина • G Marina (возле крана)",
+                loc_desc: "Наша яхта <strong>NORTHSTAR</strong> пришвартована в Кемер Марине в секторе <strong>G Marina прямо возле крана</strong>. Независимо от того, приезжаете ли вы на авто или пользуетесь бесплатным трансфером, встреча проходит максимально удобно:",
+                loc_c1_t: "Бесплатный трансфер и встреча у ворот",
+                loc_c1_d: "Наш трансфер забирает вас из отеля и привозит ко входу в <strong>G Marina</strong>, где наш сотрудник лично встречает вас и провожает прямо на яхту.",
+                loc_c2_t: "Место стоянки яхты",
+                loc_c2_d: "Кемер Марина, причал G Marina — <strong>возле крана (название яхты: NORTHSTAR)</strong>",
+                loc_cta_t: "Узнать локацию и время трансфера",
+                loc_cta_d: "Напишите или позвоните в один клик, чтобы уточнить время выезда из отеля или получить геолокацию.",
+                loc_cta_btn: "Запросить локацию в WhatsApp",
+
+                footer_desc: "Ждём вас в Кемер G Marina: 25 лет опыта, собственная яхта NORTHSTAR до 30 гостей и профессиональные инструкторы.",
+                footer_wa: "Линия WhatsApp",
+                footer_copy: "© 2026 NorthStar Diving Kemer. Все права защищены.",
+                footer_loc: "Кемер Марина • G Marina (возле крана) • Яхта: NORTHSTAR",
+
+                wa_modal_title: "Бронирование NorthStar в WhatsApp",
+                wa_modal_sub: "Инфо-линия зимой: +90 541 285 16 07",
+                wa_date_label: "Дата погружения (по желанию)",
+                wa_guests_label: "Количество гостей",
+                wa_g1: "1 гость",
+                wa_g2: "2 гостя",
+                wa_g3: "3 гостя",
+                wa_g4: "4+ гостей (Группа)",
+                wa_selected_label: "Выбранный пакет / тема:",
+                wa_preview_label: "Готовое сообщение для WhatsApp:",
+                wa_start_btn: "Перейти в чат WhatsApp"
+            }
+        };
+
+        // Paket & Konu Bilgileri (Dile Göre Dinamik Fiyat ve İsim)
+        const waTopics = {
+            single: {
+                tr: { name: "Tek Kişilik Dalış Turu", price: "3.000 ₺" },
+                en: { name: "Single Diver Tour", price: "$75" },
+                ru: { name: "Индивидуальный дайвинг-тур", price: "$75" }
+            },
+            double: {
+                tr: { name: "İkili Avantaj Paketi (2 Kişilik)", price: "5.500 ₺" },
+                en: { name: "Duo Advantage Package (2 Guests)", price: "$135" },
+                ru: { name: "Парный выгодный пакет (2 гостя)", price: "$135" }
+            },
+            paris: {
+                tr: { name: "Paris II Batığı Özel Dalışı", price: "4.000 ₺" },
+                en: { name: "Paris II Wreck Dive", price: "$100" },
+                ru: { name: "Погружение на рэк Париж II", price: "$100" }
+            },
+            islands: {
+                tr: { name: "Üç Adalar Özel Dalış Turu", price: "4.000 ₺ - 4.250 ₺" },
+                en: { name: "Three Islands Dive Tour", price: "$100 - $110" },
+                ru: { name: "Дайвинг-тур Три Острова", price: "$100 - $110" }
+            },
+            general: {
+                tr: { name: "Genel Bilgi ve Rezervasyon", price: "" },
+                en: { name: "General Info & Booking", price: "" },
+                ru: { name: "Общая информация и бронирование", price: "" }
+            },
+            quick: {
+                tr: { name: "Hızlı Bilgi ve Rezervasyon", price: "" },
+                en: { name: "Quick Info & Booking", price: "" },
+                ru: { name: "Быстрая бронь и информация", price: "" }
+            },
+            location: {
+                tr: { name: "Konum ve Otel Transfer Saati Bilgisi", price: "" },
+                en: { name: "Location & Hotel Transfer Time Info", price: "" },
+                ru: { name: "Локация и время трансфера из отеля", price: "" }
+            },
+            live: {
+                tr: { name: "Canlı WhatsApp Bilgi Hattı", price: "" },
+                en: { name: "Live WhatsApp Info Line", price: "" },
+                ru: { name: "Онлайн-линия WhatsApp", price: "" }
+            }
+        };
+
+        let currentLang = 'tr';
+        let currentTopicKey = 'double';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            if (translations[lang] && translations[lang].page_title) {
+                document.title = translations[lang].page_title;
+            }
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Masaüstü & Mobil Dil buton stillerini güncelle
+            ['tr', 'en', 'ru'].forEach(l => {
+                const btn = document.getElementById(`lang-${l}`);
+                const mobBtn = document.getElementById(`mob-lang-${l}`);
+                if (btn) {
+                    btn.className = l === lang
+                        ? "px-1.5 py-0.5 rounded text-xs font-bold bg-aqua-500 text-navy-950 transition"
+                        : "px-1.5 py-0.5 rounded text-xs font-medium text-slate-400 hover:text-white transition";
+                }
+                if (mobBtn) {
+                    mobBtn.className = l === lang
+                        ? "px-2.5 py-1 rounded bg-aqua-500 text-navy-950 text-xs font-bold"
+                        : "px-2.5 py-1 rounded bg-navy-800 text-slate-300 text-xs font-bold";
+                }
+            });
+
+            updateWaModalDisplay();
+
+            const langToast = {
+                tr: 'Dil değiştirildi: Türkçe (₺)',
+                en: 'Language switched: English ($ USD)',
+                ru: 'Язык изменён: Русский ($ USD)'
+            };
+            showToast(langToast[lang]);
+        }
+
+        // WhatsApp Modal Mantığı (0541 285 16 07)
+        function openWhatsAppModal(topicKey) {
+            currentTopicKey = waTopics[topicKey] ? topicKey : 'general';
+            updateWaModalDisplay();
+            const modal = document.getElementById('wa-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function updateWaModalDisplay() {
+            const topicObj = waTopics[currentTopicKey][currentLang];
+            document.getElementById('wa-package-name').textContent = topicObj.price
+                ? `${topicObj.name} (${topicObj.price})`
+                : topicObj.name;
+            updateWaMessage();
+        }
+
+        function updateWaMessage() {
+            const dateVal = document.getElementById('wa-date').value;
+            const guestsSelect = document.getElementById('wa-guests');
+            const guestsText = guestsSelect.options[guestsSelect.selectedIndex].text;
+            const previewEl = document.getElementById('wa-preview-text');
+            const linkEl = document.getElementById('wa-direct-link');
+
+            const topicObj = waTopics[currentTopicKey][currentLang];
+            const pkgLabel = topicObj.price ? `${topicObj.name} (${topicObj.price})` : topicObj.name;
+
+            let msg = '';
+            if (currentLang === 'tr') {
+                msg = `Merhaba NorthStar Diving! Web sitenizden ulaşıyorum. 2027 sezonu "${pkgLabel}" (${guestsText}) için açılış tarihi ve erken rezervasyon bilgisi alabilir miyim?`;
+                if (dateVal) msg += ` (Planlanan tarih: ${dateVal})`;
+            } else if (currentLang === 'en') {
+                msg = `Hello NorthStar Diving! I am reaching out from your website. Could I get opening dates and early info for the 2027 season regarding "${pkgLabel}" (${guestsText})?`;
+                if (dateVal) msg += ` (Planned date: ${dateVal})`;
+            } else if (currentLang === 'ru') {
+                msg = `Здравствуйте, NorthStar Diving! Пишу с вашего сайта. Подскажите, пожалуйста, даты открытия и условия ранней записи на сезон 2027 по пакету «${pkgLabel}» (${guestsText})?`;
+                if (dateVal) msg += ` (Планируемая дата: ${dateVal})`;
+            }
+
+            previewEl.textContent = `"${msg}"`;
+            const phone = "905412851607";
+            linkEl.href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+        }
+
+        function closeWhatsAppModal() {
+            const modal = document.getElementById('wa-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function showGoogleToast() {
+            showToast(translations[currentLang].rev_toast);
+        }
+
+        // Lightbox
+        function openLightbox(el) {
+            const src = el.querySelector('img').src;
+            document.getElementById('lightbox-img').src = src;
+            const lb = document.getElementById('lightbox-modal');
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+        }
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox-modal');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+        }
+
+        // Toast
+        let toastTimer;
+        function showToast(text) {
+            const box = document.getElementById('toast-box');
+            document.getElementById('toast-msg').textContent = text;
+            box.classList.remove('hidden');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => box.classList.add('hidden'), 3500);
+        }
+    </script>
+</body>
+</html>
